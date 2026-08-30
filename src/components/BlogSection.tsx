@@ -236,7 +236,7 @@ export default function BlogSection() {
             </h2>
           </div>
           <a
-            href="#blog"
+            href="/blog"
             className="hidden md:inline-flex items-center gap-1.5 text-sm text-slate-400 hover:text-[#a855f7] transition-colors font-medium"
           >
             View All Articles <ArrowRight size={14} />
