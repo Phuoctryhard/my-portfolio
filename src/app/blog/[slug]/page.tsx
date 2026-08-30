@@ -10,25 +10,32 @@ export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
-}): Metadata {
+  params: Promise<{ slug: string }>;
+}): Promise<Metadata> {
+  const { slug } = await params;
   try {
-    const { meta } = getPostSource(params.slug);
+    const { meta } = getPostSource(slug);
     return { title: meta.title, description: meta.description };
   } catch {
     return {};
   }
 }
 
-export default function BlogPostPage({ params }: { params: { slug: string } }) {
+export default async function BlogPostPage({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+
   let content: string;
   let meta: { title: string; date: string; category: string; readTime: string };
 
   try {
-    const source = getPostSource(params.slug);
+    const source = getPostSource(slug);
     content = source.content;
     meta = source.meta;
   } catch {
