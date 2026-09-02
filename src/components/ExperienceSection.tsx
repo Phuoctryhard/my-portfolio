@@ -55,7 +55,7 @@ const experiences = [
     location: "Da Nang, Vietnam",
     type: "Education",
     description:
-      "Studying Information Security. GPA 3.33/4.0. Academic Scholarship HK1 2024–2025. First Prize in Database Competition – Storm House Club 2022. TOEIC 550.",
+      "Studying Information Security. GPA 3.33/4.0. Academic Scholarship HK1 2024–2025. First Prize in Database Competition – Storm House Club 2022. TOEIC 700.",
     tags: ["Information Security", "Algorithms", "Databases", "Networks"],
     icon: "DUT",
     accent: "#f59e0b",
