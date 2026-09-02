@@ -111,7 +111,7 @@ Git, Postman, React Developer Tool, React Query Dev Tool, Github,VS Code, Bash
 ## 🥇Honors & Awards
 🎓 Academic Scholarship HK1 2024-2025
 🏆 First Prize in the Database Competition – Storm House Club 2022
-📜 TOEIC 550 📊 GPA: 3.33 / 4.0
+📜 TOEIC 700 📊 GPA: 3.33 / 4.0
 
 ## 📚Education
 
